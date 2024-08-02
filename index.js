@@ -5,10 +5,10 @@ import createItem from "./src/services/item.js";
 
 const cart = [];
 
-const item1 = await createItem("feijao", 22.90, 3);
-const item2 = await createItem("arroz", 30.99, 2);
-const item3 = await createItem("algodao", 5.99, 1);
-const item4 = await createItem("pepino", 10.99, 4);
+const item1 = createItem("feijao", 22.90, 3);
+const item2 = createItem("arroz", 30.99, 2);
+const item3 = createItem("algodao", 5.99, 1);
+const item4 = createItem("pepino", 10.99, 4);
 
 (async function main() {
     
