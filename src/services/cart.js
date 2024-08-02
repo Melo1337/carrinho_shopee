@@ -25,7 +25,7 @@ async function removeItem(userCart, item) {
 
     if (item.quantity > 1) {
         userCart[indexItem].quantity--
-        userCart[indexItem].subtotal = () => item.price * item.quantity
+        userCart[indexItem].subtotal()
         return;
     }
 
@@ -65,4 +65,3 @@ export {
     calcTotal,
     displayCart
 }
-
